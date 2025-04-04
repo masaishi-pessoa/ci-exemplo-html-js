@@ -3,7 +3,7 @@ name: CI
 on:
 push:
 branches: [ main ] # O workflow será executado em cada "push" na branch
-"main".
+"main"
 pull_request:
 branches: [ main ] # O workflow será executado em cada "pull request"
 direcionado à branch "main".
@@ -29,4 +29,4 @@ if: github.ref == 'refs/heads/main' # Só executa o deploy quando o commit for
 na branch main.
 uses: actions/deploy-pages@v2
 with:
-folder: . # Diretório a ser deployado (raiz do repositório neste caso)
+folder:  # Diretório a ser deployado (raiz do repositório neste caso)
