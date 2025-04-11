@@ -27,7 +27,6 @@ jobs:
           exit 0 # Simula testes passando
 
       - name: Deploy para GitHub Pages
-        if: github.ref == 'refs/heads/main' # Só executa o deploy quando o commit for na branch main.
-        uses: actions/deploy-pages@v2
-        with:
-          folder: . # Diretório a ser deployado (raiz do repositório neste caso)
+        if: github.ref == 'refs/heads/main'
+        uses: actions/deploy-pages@v4
+        
